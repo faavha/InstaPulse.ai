@@ -1,0 +1,2080 @@
+{
+ "version": "1.0-id",
+ "note": "Leksikon untuk humanize.py dan detect.py, dua bahasa. Entri bertanda lang=id adalah 'bahasa AI' versi Indonesia: frasa terjemahan kaku, pembuka basa-basi, penghubung formal, dan penutup refleks khas caption Instagram Indonesia. Entri lang=en berasal dari versi asli (bahasa Inggris), berguna untuk caption campuran. Penggantinya ditulis untuk register santai. Kalau ada kata yang memang gaya kamu, hapus saja entrinya: file ini milikmu.",
+ "invisible": [
+  {
+   "cp": "U+200B",
+   "name": "ZERO WIDTH SPACE",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200C",
+   "name": "ZERO WIDTH NON-JOINER",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200D",
+   "name": "ZERO WIDTH JOINER",
+   "action": "delete"
+  },
+  {
+   "cp": "U+2060",
+   "name": "WORD JOINER",
+   "action": "delete"
+  },
+  {
+   "cp": "U+FEFF",
+   "name": "ZERO WIDTH NO-BREAK SPACE / BOM",
+   "action": "delete"
+  },
+  {
+   "cp": "U+00AD",
+   "name": "SOFT HYPHEN",
+   "action": "delete"
+  },
+  {
+   "cp": "U+180E",
+   "name": "MONGOLIAN VOWEL SEPARATOR",
+   "action": "delete"
+  },
+  {
+   "cp": "U+061C",
+   "name": "ARABIC LETTER MARK",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200E",
+   "name": "LEFT-TO-RIGHT MARK",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200F",
+   "name": "RIGHT-TO-LEFT MARK",
+   "action": "delete"
+  },
+  {
+   "cp": "U+E0000-U+E007F",
+   "name": "TAG CHARACTERS (invisible ASCII smuggling)",
+   "action": "delete"
+  },
+  {
+   "cp": "U+00A0",
+   "name": "NO-BREAK SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+202F",
+   "name": "NARROW NO-BREAK SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2009",
+   "name": "THIN SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2007",
+   "name": "FIGURE SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2003",
+   "name": "EM SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2002",
+   "name": "EN SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2063",
+   "name": "INVISIBLE SEPARATOR",
+   "action": "delete"
+  }
+ ],
+ "typographic": [
+  {
+   "from": "—",
+   "name": "EM DASH",
+   "to": ", "
+  },
+  {
+   "from": "–",
+   "name": "EN DASH",
+   "to": "-"
+  },
+  {
+   "from": "‘",
+   "name": "LEFT SINGLE QUOTE",
+   "to": "'"
+  },
+  {
+   "from": "’",
+   "name": "RIGHT SINGLE QUOTE",
+   "to": "'"
+  },
+  {
+   "from": "“",
+   "name": "LEFT DOUBLE QUOTE",
+   "to": "\""
+  },
+  {
+   "from": "”",
+   "name": "RIGHT DOUBLE QUOTE",
+   "to": "\""
+  },
+  {
+   "from": "…",
+   "name": "HORIZONTAL ELLIPSIS",
+   "to": "..."
+  },
+  {
+   "from": "′",
+   "name": "PRIME",
+   "to": "'"
+  },
+  {
+   "from": "·",
+   "name": "MIDDLE DOT",
+   "to": "-"
+  },
+  {
+   "from": "•",
+   "name": "BULLET",
+   "to": "-"
+  },
+  {
+   "from": "→",
+   "name": "RIGHTWARDS ARROW",
+   "to": "->"
+  }
+ ],
+ "words": [
+  {
+   "find": "menyelami",
+   "replace": "membahas",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "mengeksplorasi",
+   "replace": "mencoba",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "memaksimalkan potensi",
+   "replace": "memanfaatkan",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "membuka potensi",
+   "replace": "memanfaatkan",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "mengoptimalkan",
+   "replace": "memperbaiki",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "mengoptimalisasi",
+   "replace": "memperbaiki",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "merevolusi",
+   "replace": "mengubah",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "mentransformasi",
+   "replace": "mengubah",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "bertransformasi",
+   "replace": "berubah",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "memberdayakan",
+   "replace": "membantu",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "melejitkan",
+   "replace": "menaikkan",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "meroket",
+   "replace": "naik tajam",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "menghadirkan",
+   "replace": "membawa",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "meningkatkan kualitas hidup",
+   "replace": "memperbaiki hidup",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "memanfaatkan secara maksimal",
+   "replace": "memanfaatkan",
+   "family": "kata kerja",
+   "lang": "id"
+  },
+  {
+   "find": "krusial",
+   "replace": "penting",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "esensial",
+   "replace": "penting",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "secara signifikan",
+   "replace": "jauh",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "signifikan",
+   "replace": "besar",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "komprehensif",
+   "replace": "lengkap",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "holistik",
+   "replace": "menyeluruh",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "inovatif",
+   "replace": "baru",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "revolusioner",
+   "replace": "baru",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "transformatif",
+   "replace": "besar",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "optimal",
+   "replace": "bagus",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "menakjubkan",
+   "replace": "keren",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "memukau",
+   "replace": "keren",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "tak terlupakan",
+   "replace": "berkesan",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "tak tertandingi",
+   "replace": "paling bagus",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "mutakhir",
+   "replace": "terbaru",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "multifaset",
+   "replace": "banyak sisi",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "berkualitas tinggi",
+   "replace": "bagus",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "sangat penting",
+   "replace": "penting",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "dunia yang dinamis",
+   "replace": "dunia sekarang",
+   "family": "kata sifat",
+   "lang": "id"
+  },
+  {
+   "find": "lanskap",
+   "replace": "dunia",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "ranah",
+   "replace": "bidang",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "paradigma",
+   "replace": "cara pandang",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "sinergi",
+   "replace": "kerja sama",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "solusi terbaik",
+   "replace": "cara paling pas",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "kunci sukses",
+   "replace": "kunci",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "rahasia sukses",
+   "replace": "cara",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "game changer",
+   "replace": "pembeda",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "panduan lengkap",
+   "replace": "panduan",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "tips dan trik",
+   "replace": "tips",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "perjalanan menuju",
+   "replace": "jalan ke",
+   "family": "kata benda",
+   "lang": "id"
+  },
+  {
+   "find": "selain itu",
+   "replace": "terus",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "lebih lanjut",
+   "replace": "terus",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "tak hanya itu",
+   "replace": "belum lagi",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "tidak hanya itu",
+   "replace": "belum lagi",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "oleh karena itu",
+   "replace": "makanya",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "oleh sebab itu",
+   "replace": "makanya",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "dengan demikian",
+   "replace": "jadi",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "pada akhirnya",
+   "replace": "ujungnya",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "pada dasarnya",
+   "replace": "intinya",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "kesimpulannya",
+   "replace": "jadi",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "sebagai kesimpulan",
+   "replace": "jadi",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "secara keseluruhan",
+   "replace": "intinya",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "dalam hal ini",
+   "replace": "di sini",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "perlu diingat bahwa",
+   "replace": "ingat",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "penting untuk dicatat bahwa",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "patut dicatat bahwa",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "perlu dicatat bahwa",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "tidak dapat dipungkiri bahwa",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "tidak dapat dipungkiri",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "tak dapat dipungkiri",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "tidak bisa dipungkiri",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "tentunya",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "dalam rangka",
+   "replace": "untuk",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "yang mana",
+   "replace": "yang",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "adapun",
+   "replace": "",
+   "family": "penghubung",
+   "lang": "id"
+  },
+  {
+   "find": "delve into",
+   "replace": "look at",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "delve",
+   "replace": "look",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "dive deep into",
+   "replace": "get into",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "deep dive",
+   "replace": "breakdown",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "leverage",
+   "replace": "use",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "leveraging",
+   "replace": "using",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "utilize",
+   "replace": "use",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "utilizing",
+   "replace": "using",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "harness",
+   "replace": "use",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "embark on",
+   "replace": "start",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "foster",
+   "replace": "build",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "facilitate",
+   "replace": "help",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "showcase",
+   "replace": "show",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "unlock",
+   "replace": "get",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "elevate",
+   "replace": "improve",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "streamline",
+   "replace": "simplify",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "spearhead",
+   "replace": "lead",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "underscore",
+   "replace": "show",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "underscores",
+   "replace": "shows",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "cultivate",
+   "replace": "build",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "amplify",
+   "replace": "boost",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "curate",
+   "replace": "pick",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "curated",
+   "replace": "picked",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "empower",
+   "replace": "let",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "revolutionize",
+   "replace": "change",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "transformative",
+   "replace": "big",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "robust",
+   "replace": "solid",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "seamless",
+   "replace": "clean",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "seamlessly",
+   "replace": "cleanly",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "pivotal",
+   "replace": "key",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "crucial",
+   "replace": "important",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "comprehensive",
+   "replace": "complete",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "cutting-edge",
+   "replace": "new",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "game-changing",
+   "replace": "big",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "game-changer",
+   "replace": "big deal",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "groundbreaking",
+   "replace": "new",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "unparalleled",
+   "replace": "unmatched",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "invaluable",
+   "replace": "useful",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "meticulous",
+   "replace": "careful",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "meticulously",
+   "replace": "carefully",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "myriad of",
+   "replace": "many",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "myriad",
+   "replace": "many",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "multifaceted",
+   "replace": "complicated",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "holistic",
+   "replace": "whole",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "bespoke",
+   "replace": "custom",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "innovative",
+   "replace": "new",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "profound",
+   "replace": "big",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "remarkable",
+   "replace": "notable",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "compelling",
+   "replace": "convincing",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "tapestry",
+   "replace": "mix",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "realm",
+   "replace": "world",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "landscape",
+   "replace": "market",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "journey",
+   "replace": "process",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "testament to",
+   "replace": "proof of",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "cornerstone",
+   "replace": "base",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "beacon",
+   "replace": "signal",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "paradigm",
+   "replace": "model",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "synergy",
+   "replace": "overlap",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "ecosystem",
+   "replace": "system",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "treasure trove",
+   "replace": "pile",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "plethora of",
+   "replace": "lots of",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "plethora",
+   "replace": "lots",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "north star",
+   "replace": "goal",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "moreover",
+   "replace": "also",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "furthermore",
+   "replace": "also",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "additionally",
+   "replace": "also",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "nevertheless",
+   "replace": "still",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "consequently",
+   "replace": "so",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "thus",
+   "replace": "so",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "hence",
+   "replace": "so",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "notably",
+   "replace": "",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "importantly",
+   "replace": "",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "ultimately",
+   "replace": "in the end",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "in essence",
+   "replace": "basically",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "in conclusion",
+   "replace": "so",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "when it comes to",
+   "replace": "with",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "in order to",
+   "replace": "to",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "a wide range of",
+   "replace": "many",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "it is worth noting that",
+   "replace": "note that",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "supercharge",
+   "replace": "speed up",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "skyrocket",
+   "replace": "raise",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "unleash",
+   "replace": "release",
+   "family": "verbs",
+   "lang": "en"
+  },
+  {
+   "find": "effortlessly",
+   "replace": "easily",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "captivating",
+   "replace": "interesting",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "stunning",
+   "replace": "good",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "breathtaking",
+   "replace": "striking",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "iconic",
+   "replace": "known",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "must-have",
+   "replace": "worth having",
+   "family": "adjectives",
+   "lang": "en"
+  },
+  {
+   "find": "no-brainer",
+   "replace": "obvious",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "hidden gem",
+   "replace": "good one",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "secret sauce",
+   "replace": "the actual method",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "ultimate guide",
+   "replace": "guide",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "level up",
+   "replace": "improve",
+   "family": "verbs",
+   "lang": "en"
+  }
+ ],
+ "phrases": [
+  {
+   "find": "di era digital seperti sekarang ini",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di era digital saat ini",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di era digital ini",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di era modern ini",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di era yang serba cepat ini",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di zaman serba digital ini",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di dunia yang serba cepat ini",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "dalam dunia yang terus berkembang",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di tengah persaingan yang semakin ketat",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "seiring dengan perkembangan teknologi",
+   "replace": "sekarang",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "mari kita selami",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "mari kita bahas",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "mari kita mulai",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "yuk simak selengkapnya",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "simak selengkapnya",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "simak ulasan berikut",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "simak penjelasan berikut",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "simak sampai habis",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "berikut ini adalah",
+   "replace": "ini",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "berikut adalah",
+   "replace": "ini",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "dalam postingan ini",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di postingan kali ini",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "di video kali ini",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "pada video kali ini",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "dalam video ini",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "jangan scroll dulu",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "jangan di-skip",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "tonton sampai habis",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "tonton sampai akhir",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "kamu nggak akan percaya",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "kalian nggak akan percaya",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "kamu tidak akan percaya",
+   "replace": "",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "nggak ada yang ngomongin ini",
+   "replace": "jarang yang bahas ini",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "tidak ada yang membicarakan ini",
+   "replace": "jarang yang bahas ini",
+   "family": "pembuka",
+   "lang": "id"
+  },
+  {
+   "find": "semoga bermanfaat",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "semoga membantu",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "jangan lupa follow",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "follow untuk konten menarik lainnya",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "follow untuk info menarik lainnya",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "share ke teman kamu yang membutuhkan",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "tunggu apa lagi",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "yuk mulai sekarang",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "sampai jumpa di postingan berikutnya",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "terima kasih sudah membaca",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "terima kasih telah membaca",
+   "replace": "",
+   "family": "penutup",
+   "lang": "id"
+  },
+  {
+   "find": "algoritma suka",
+   "replace": "Instagram mendorong",
+   "family": "instagram",
+   "lang": "id"
+  },
+  {
+   "find": "auto viral",
+   "replace": "lebih banyak dilihat",
+   "family": "instagram",
+   "lang": "id"
+  },
+  {
+   "find": "viral dalam semalam",
+   "replace": "dapat jangkauan",
+   "family": "instagram",
+   "lang": "id"
+  },
+  {
+   "find": "ngalahin algoritma",
+   "replace": "dapat jangkauan",
+   "family": "instagram",
+   "lang": "id"
+  },
+  {
+   "find": "mengalahkan algoritma",
+   "replace": "dapat jangkauan",
+   "family": "instagram",
+   "lang": "id"
+  },
+  {
+   "find": "in today's fast-paced world",
+   "replace": "right now",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "in today's digital age",
+   "replace": "right now",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "in the ever-evolving landscape of",
+   "replace": "in",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "in the ever-changing world of",
+   "replace": "in",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "let's face it",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "here's the thing",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "picture this",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "imagine a world where",
+   "replace": "imagine if",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "it's no secret that",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "we've all been there",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "let that sink in",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "the choice is yours",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "food for thought",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "the future is here",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "what are your thoughts?",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "drop a comment below",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "at the end of the day",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "needle-moving",
+   "replace": "useful",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "move the needle",
+   "replace": "make a difference",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "a testament to",
+   "replace": "proof of",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "had the opportunity to",
+   "replace": "got to",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "i am excited to announce",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "i'm thrilled to share",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "i am humbled to",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "without further ado",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "buckle up",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "the harsh truth is",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "spoiler alert",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "read that again",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "you're welcome",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "save this for later",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "who's with me",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "stop scrolling",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "don't scroll past this",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "in this video i'm going to show you",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "in today's video",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "watch till the end",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "you won't believe",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "nobody is talking about this",
+   "replace": "few people do this",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "no one is talking about this",
+   "replace": "few people do this",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "this changed everything",
+   "replace": "this worked",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "this is your sign to",
+   "replace": "",
+   "family": "openers",
+   "lang": "en"
+  },
+  {
+   "find": "little did i know",
+   "replace": "",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "fast forward to today",
+   "replace": "now",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "and just like that",
+   "replace": "",
+   "family": "connectives",
+   "lang": "en"
+  },
+  {
+   "find": "the rest is history",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "run don't walk",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "trust me on this one",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "don't sleep on this",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "follow for more",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "hit follow for more",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "double tap if",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "tag someone who needs this",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "let me know in the comments",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "share this with someone who needs it",
+   "replace": "",
+   "family": "closers",
+   "lang": "en"
+  },
+  {
+   "find": "the algorithm loves",
+   "replace": "Instagram pushes",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "beat the algorithm",
+   "replace": "get reach",
+   "family": "nouns",
+   "lang": "en"
+  },
+  {
+   "find": "go viral overnight",
+   "replace": "get reach",
+   "family": "nouns",
+   "lang": "en"
+  }
+ ],
+ "structures": [
+  {
+   "id": "bukan-sekadar",
+   "regex": "(?i)\\bbukan (?:sekadar|cuma|cuman|hanya) [^.!?\\n]{2,60}[,.]\\s*(?:tapi|tetapi|melainkan|namun)\\b",
+   "name": "\"Bukan sekadar X, tapi Y\"",
+   "fix": "Langsung katakan Y. Bagian 'bukan sekadar' itu cuma ancang-ancang.",
+   "lang": "id"
+  },
+  {
+   "id": "tidak-hanya",
+   "regex": "(?i)\\b(?:tidak|nggak|gak|bukan) (?:hanya|cuma|sekadar)\\b[^.!?\\n]{2,80}\\b(?:tetapi|tapi|namun|melainkan) juga\\b",
+   "name": "\"Tidak hanya X, tetapi juga Y\"",
+   "fix": "Pecah jadi dua kalimat, atau buang bagian yang lebih lemah.",
+   "lang": "id"
+  },
+  {
+   "id": "bukan-tentang",
+   "regex": "(?i)\\b(?:ini|itu) bukan (?:tentang|soal|masalah) [^.!?\\n]{2,60}[.!]\\s*(?:ini|itu) (?:tentang|soal)\\b",
+   "name": "\"Ini bukan tentang X. Ini tentang Y.\"",
+   "fix": "Mulai dari Y. Pembalikan itulah tandanya.",
+   "lang": "id"
+  },
+  {
+   "id": "hasilnya",
+   "regex": "(?im)^\\s*(?:hasilnya|bagian terbaiknya|masalahnya|faktanya|rahasianya|intinya|jawabannya|kok bisa)\\?\\s*$",
+   "name": "Baris tanya satu kata (\"Hasilnya?\")",
+   "fix": "Gabungkan dengan kalimat jawabannya. Kejutan yang dipentaskan terbaca seperti template.",
+   "lang": "id"
+  },
+  {
+   "id": "berikut-titikdua",
+   "regex": "(?i)\\b(?:berikut|ini dia|inilah) (?:adalah |ini )?(?:\\d+ )?(?:cara|tips|langkah|alasan|hal|rahasia)\\b[^.!?\\n]*:",
+   "name": "\"Berikut adalah 5 cara...:\"",
+   "fix": "Langsung masuk ke cara pertama. Pengantar daftar tidak perlu diumumkan.",
+   "lang": "id"
+  },
+  {
+   "id": "pernahkah",
+   "regex": "(?i)\\bpernahkah (?:kamu|kalian|anda)\\b|\\bapakah (?:kamu|kalian|anda) (?:pernah|sering|merasa)\\b",
+   "name": "\"Pernahkah kamu merasa...?\"",
+   "fix": "Ganti pertanyaan retoris dengan kejadian nyata: siapa, kapan, berapa.",
+   "lang": "id"
+  },
+  {
+   "id": "bayangkan",
+   "regex": "(?im)^\\s*(?:coba )?bayangkan\\b",
+   "name": "Dibuka dengan \"Bayangkan...\"",
+   "fix": "Jangan suruh orang membayangkan. Ceritakan yang benar-benar terjadi.",
+   "lang": "id"
+  },
+  {
+   "id": "triad-dan",
+   "regex": "(?i)\\b\\w+, \\w+, dan \\w+\\.",
+   "name": "Pola tiga (\"cepat, mudah, dan murah.\")",
+   "fix": "Pilih satu yang paling benar. Tiga kata sifat berderet adalah refleks mesin.",
+   "lang": "id"
+  },
+  {
+   "id": "sapaan-pembuka",
+   "regex": "(?im)^\\s*(?:hal+o|hai|hi) (?:sobat|teman-teman|temen-temen|guys|semua|semuanya|kak|bestie|gengs)\\b",
+   "name": "Sapaan pembuka (\"Halo sobat...!\")",
+   "fix": "Hapus atau pindahkan ke bawah. Baris pertama milik hook.",
+   "lang": "id"
+  },
+  {
+   "id": "yuk-simak",
+   "regex": "(?i)\\byuk,? (?:simak|kita bahas|cari tahu|kenali|disimak)\\b",
+   "name": "\"Yuk, simak!\"",
+   "fix": "Hapus. Isi yang bagus tidak perlu diumumkan dulu.",
+   "lang": "id"
+  },
+  {
+   "id": "jangan-lupa",
+   "regex": "(?i)\\bjangan lupa (?:like|follow|share|komen|comment|simpan|save|subscribe|tag|untuk)\\b",
+   "name": "\"Jangan lupa like, follow, share\"",
+   "fix": "Satu ajakan yang spesifik, atau tidak sama sekali.",
+   "lang": "id"
+  },
+  {
+   "id": "tag-teman",
+   "regex": "(?i)\\b(?:tag|mention) (?:teman|temen|bestie|sahabat|pasangan)\\b",
+   "name": "\"Tag teman kamu yang...\"",
+   "fix": "Umpan refleks. Kalau kontennya layak dikirim, orang akan mengirimnya.",
+   "lang": "id"
+  },
+  {
+   "id": "judul-kesimpulan",
+   "regex": "(?im)^\\s*(?:kesimpulan|kesimpulannya|penutup|ringkasan)\\s*:?\\s*$",
+   "name": "Subjudul \"Kesimpulan:\" di caption",
+   "fix": "Caption bukan makalah. Hapus subjudulnya.",
+   "lang": "id"
+  },
+  {
+   "id": "stop-scroll-id",
+   "regex": "(?im)^\\s*(?:stop scroll\\w*|jangan (?:di)?-?scroll\\w*|tunggu,? jangan scroll)\\b",
+   "name": "\"Jangan scroll!\"",
+   "fix": "Hapus. Kalau baris pertama bagus, orang berhenti sendiri.",
+   "lang": "id"
+  },
+  {
+   "id": "video-ini-id",
+   "regex": "(?i)\\b(?:di|pada|dalam) (?:video|reels?|postingan|konten) (?:ini|kali ini)\\b|\\baku (?:mau|akan) (?:kasih tau|nunjukin|bahas|share)\\b|\\bsaya (?:akan|ingin) (?:menunjukkan|membahas|berbagi)\\b",
+   "name": "Basa-basi \"di video kali ini aku mau...\"",
+   "fix": "Buka langsung dengan isinya.",
+   "lang": "id"
+  },
+  {
+   "id": "sebagai-ai-id",
+   "regex": "(?i)\\bsebagai (?:ai|model bahasa|asisten ai)\\b",
+   "name": "\"Sebagai AI...\"",
+   "fix": "Sisa jawaban chatbot. Hapus seluruh kalimatnya.",
+   "lang": "id"
+  },
+  {
+   "id": "not-just",
+   "regex": "(?i)\\bit'?s not (?:just|only) [^.!?\\n]{2,60}[,.] it'?s\\b",
+   "name": "\"It's not just X, it's Y\"",
+   "fix": "Katakan satu hal yang benar-benar dimaksud. Hapus bagian ancang-ancangnya.",
+   "lang": "en"
+  },
+  {
+   "id": "not-only",
+   "regex": "(?i)\\bnot only\\b[^.!?\\n]{2,80}\\bbut also\\b",
+   "name": "\"Not only X but also Y\"",
+   "fix": "Pecah jadi dua kalimat, atau buang yang lebih lemah.",
+   "lang": "en"
+  },
+  {
+   "id": "isnt-about",
+   "regex": "(?i)\\b(?:this|it) is(?:n'?t| not) about [^.!?\\n]{2,60}[.!] it'?s about\\b",
+   "name": "\"It isn't about X. It's about Y.\"",
+   "fix": "Mulai dari Y. Pembalikan itulah tandanya.",
+   "lang": "en"
+  },
+  {
+   "id": "the-result",
+   "regex": "(?i)^\\s*(?:the result|the best part|the kicker|the catch)\\?\\s*$",
+   "name": "Baris tanya satu kata (\"The result?\")",
+   "fix": "Gabungkan dengan jawabannya.",
+   "lang": "en"
+  },
+  {
+   "id": "heres-what",
+   "regex": "(?i)\\bhere'?s what (?:i|we) learned\\b",
+   "name": "\"Here's what I learned\"",
+   "fix": "Langsung sebutkan pelajarannya.",
+   "lang": "en"
+  },
+  {
+   "id": "triad",
+   "regex": "(?i)\\b\\w+, \\w+, and \\w+\\.",
+   "name": "Pola tiga (\"X, Y, and Z.\")",
+   "fix": "Pilih satu yang paling benar.",
+   "lang": "en"
+  },
+  {
+   "id": "rocket",
+   "regex": "[\\U0001F680\\U0001F525\\U0001F4A1\\u2728\\U0001F3AF]",
+   "name": "Emoji template (🚀🔥💡✨🎯)",
+   "fix": "Hapus, atau pakai satu yang memang berarti sesuatu.",
+   "lang": "en"
+  },
+  {
+   "id": "hashtag-wall",
+   "regex": "(?:#\\w+[ \\t]*){5,}",
+   "name": "Tembok hashtag (5+ berderet)",
+   "fix": "Maksimal 5 tag spesifik, di baris terakhir.",
+   "lang": "en"
+  },
+  {
+   "id": "as-an-ai",
+   "regex": "(?i)\\bas an ai\\b|\\bas a language model\\b",
+   "name": "\"As an AI...\"",
+   "fix": "Sisa jawaban chatbot. Hapus kalimatnya.",
+   "lang": "en"
+  },
+  {
+   "id": "in-summary",
+   "regex": "(?i)^\\s*(?:in summary|to summarize|in conclusion)\\b",
+   "name": "\"In summary / In conclusion\"",
+   "fix": "Caption bukan makalah. Hapus.",
+   "lang": "en"
+  },
+  {
+   "id": "engagement-bait",
+   "regex": "(?i)\\b(?:agree\\?|thoughts\\?|who else\\b|am i wrong\\?)\\s*$",
+   "name": "Umpan di akhir (\"Agree?\", \"Thoughts?\")",
+   "fix": "Ajukan pertanyaan spesifik, atau tidak sama sekali.",
+   "lang": "en"
+  },
+  {
+   "id": "stop-scroll",
+   "regex": "(?im)^\\s*(?:stop scrolling|don'?t scroll|wait[,.]? don'?t scroll)\\b",
+   "name": "\"Stop scrolling\"",
+   "fix": "Hapus. Baris pertama yang bagus menghentikan orang sendiri.",
+   "lang": "en"
+  },
+  {
+   "id": "in-this-video",
+   "regex": "(?i)\\b(?:in (?:this|today'?s) (?:video|reel|post)|today i'?m going to show you|i'?m going to (?:show|teach) you how)\\b",
+   "name": "Basa-basi \"in this video\"",
+   "fix": "Buka langsung dengan isinya.",
+   "lang": "en"
+  },
+  {
+   "id": "emoji-bullets",
+   "regex": "(?m)^\\s*[\\U0001F300-\\U0001FAFF✅➡⬅✔✨]\\s*\\S",
+   "name": "Daftar dengan bullet emoji (✅ ➡️ ✨)",
+   "fix": "Pakai tanda hubung atau baris baru. Bullet emoji adalah hal paling 'template' di sebuah caption.",
+   "lang": "en"
+  },
+  {
+   "id": "caps-shout",
+   "regex": "\\b[A-Z]{3,}\\b(?:\\s+\\b[A-Z]{3,}\\b){2,}",
+   "name": "Tiga kata kapital berturut-turut",
+   "fix": "Pilih satu kata yang ditekankan, sisanya huruf biasa.",
+   "lang": "en"
+  },
+  {
+   "id": "follow-bait",
+   "regex": "(?i)\\b(?:follow for more|tag someone who|double tap if|share this if|comment below if)\\b",
+   "name": "Umpan follow (\"follow for more\", \"double tap if\")",
+   "fix": "Satu ajakan spesifik, atau tidak ada.",
+   "lang": "en"
+  }
+ ],
+ "formal_markers": [
+  "anda",
+  "merupakan",
+  "tersebut",
+  "sebuah",
+  "memiliki",
+  "melakukan",
+  "dapat",
+  "hal ini",
+  "yakni",
+  "yaitu",
+  "agar dapat",
+  "demikian"
+ ],
+ "casual_markers": [
+  "nggak",
+  "ngga",
+  "gak",
+  "ga",
+  "enggak",
+  "udah",
+  "aja",
+  "sih",
+  "dong",
+  "kok",
+  "deh",
+  "nih",
+  "tuh",
+  "kan",
+  "yuk",
+  "loh",
+  "lho",
+  "kayak",
+  "kek",
+  "emang",
+  "bikin",
+  "pake",
+  "gimana",
+  "kenapa",
+  "gitu",
+  "gini",
+  "banget",
+  "doang",
+  "cuman",
+  "soalnya",
+  "biar",
+  "kalo",
+  "tau",
+  "gue",
+  "gw",
+  "lo",
+  "lu",
+  "ya",
+  "yah",
+  "wkwk",
+  "kah",
+  "mah",
+  "pas",
+  "terus",
+  "trus",
+  "abis",
+  "gede",
+  "mending",
+  "kudu",
+  "ngapain",
+  "nyari",
+  "ngerasa",
+  "ngomong",
+  "ngasih",
+  "ketemu"
+ ]
+}

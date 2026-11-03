@@ -1,0 +1,16 @@
+{
+  "name": "instapulse",
+  "owner": {
+    "name": "Favha"
+  },
+  "metadata": {
+    "description": "Skill Claude untuk kreator dan UMKM Instagram berbahasa Indonesia."
+  },
+  "plugins": [
+    {
+      "name": "instagram-indonesia",
+      "source": "./",
+      "description": "13 skill Instagram berbahasa Indonesia: Reels, caption, carousel, story, profil, rencana mingguan, komen, DM, audit, dan humanizer bahasa AI Indonesia."
+    }
+  ]
+}

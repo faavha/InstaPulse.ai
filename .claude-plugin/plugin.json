@@ -1,0 +1,20 @@
+{
+  "name": "instagram-indonesia",
+  "version": "0.1.0",
+  "description": "13 skill Instagram berbahasa Indonesia: naskah Reels dengan 29 formula hook dan beat sheet berbasis suku kata, riset Reels viral berdasarkan outlier multiple, caption yang dicek linter, carousel, story, skor profil, rencana mingguan (WIB/WITA/WIT), komen, balasan, DM, repurpose, audit, dan humanizer yang menghapus 'bahasa AI' versi Indonesia. Adaptasi dari instagram-agent-skill (MIT) oleh Jake Schincariol.",
+  "author": {
+    "name": "Favha"
+  },
+  "homepage": "https://github.com/Jakeschincariol/instagram-agent-skill",
+  "license": "MIT",
+  "keywords": [
+    "instagram",
+    "indonesia",
+    "reels",
+    "caption",
+    "konten",
+    "humanizer",
+    "umkm",
+    "social media"
+  ]
+}

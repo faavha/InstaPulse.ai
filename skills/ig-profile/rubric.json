@@ -1,0 +1,91 @@
+{
+ "version": "1.0-id",
+ "total": 100,
+ "note": "Dua belas item. Nilai dengan jujur, skor murah hati tidak menolong siapa pun. Kebanyakan profil di putaran pertama mendapat 30-an dan 40-an. Bobotnya disengaja: kolom nama, baris pertama bio dan tiga sematan bernilai lebih dari foto, karena itulah yang diproses orang asing yang datang dari satu Reel sebelum memutuskan follow.",
+ "items": [
+  {
+   "id": "name_field",
+   "label": "kolom nama",
+   "points": 12,
+   "full_marks": "Kolom nama (30 karakter, baris tebal, bukan handle) berisi nama plus pekerjaan dengan kata yang dicari orang: 'Rina | Katering Sehat Solo'. Kolom ini diindeks pencarian Instagram dan kebanyakan akun menyia-nyiakannya dengan nama saja.",
+   "common_fail": "Cuma nama, atau nama plus emoji."
+  },
+  {
+   "id": "bio_first_line",
+   "label": "baris 1 bio",
+   "points": 12,
+   "full_marks": "Baris pertama menyebut untuk siapa ini dan apa yang berubah buat mereka, dengan bahasa mereka. Bukan jabatan, bukan daftar kata sifat, bukan tiga emoji dipisah garis tegak.",
+   "common_fail": "'Pejuang rupiah | Pecinta kopi | Anak mama'."
+  },
+  {
+   "id": "bio_body",
+   "label": "isi bio",
+   "points": 8,
+   "full_marks": "Sisa 150 karakter membawa satu bukti atau satu tawaran spesifik (boleh dengan kota/area layanan), dan terbaca sebagai kalimat, bukan daftar dipisah garis tegak.",
+   "common_fail": "Tumpukan kata kunci, ayat/quote tanpa hubungan dengan bisnis, atau kosong."
+  },
+  {
+   "id": "pinned_three",
+   "label": "tiga sematan",
+   "points": 10,
+   "full_marks": "Tiga post disematkan di atas grid dengan tugas berbeda: bukti terbaik, penjelasan penawaran paling jelas, perkenalan terbaik tentang orangnya. Bukan tiga post dengan views tertinggi secara kebetulan.",
+   "common_fail": "Tidak ada yang disematkan, jadi bagian atas grid adalah apa pun yang terakhir diposting."
+  },
+  {
+   "id": "link",
+   "label": "link",
+   "points": 8,
+   "full_marks": "Satu tujuan yang cocok dengan janji bio. Link wa.me dengan pesan pembuka terisi wajar untuk bisnis lokal. Lima link diizinkan; lebih dari dua sudah jadi menu.",
+   "common_fail": "Linktree dengan sebelas pilihan, link mati, atau tidak ada link sama sekali."
+  },
+  {
+   "id": "highlights",
+   "label": "sorotan",
+   "points": 8,
+   "full_marks": "Empat sampai enam sorotan dinamai dengan pertanyaan pembeli: Harga, Testimoni, Cara Order, Tentang. Cover seragam. Tidak ada yang lebih tua dari setahun di depan.",
+   "common_fail": "'Random', 'Me', 'Faves', atau 14 sorotan tanpa urutan."
+  },
+  {
+   "id": "grid_legibility",
+   "label": "grid terbaca",
+   "points": 8,
+   "full_marks": "Sembilan cover pertama terbaca di ukuran thumbnail dan menjelaskan akunnya tanpa satu ketukan pun. Cover Reel dipilih sengaja, bukan dibiarkan frame pertama.",
+   "common_fail": "Sembilan cover wajah sedang di tengah kata, tanpa teks."
+  },
+  {
+   "id": "photo",
+   "label": "foto",
+   "points": 6,
+   "full_marks": "Wajah mengisi sekitar 60% lingkaran yang tampil sekitar 40 piksel. Mata terlihat, diambil dalam dua tahun terakhir, latar tidak bersaing.",
+   "common_fail": "Foto seluruh badan, logo untuk personal brand, atau foto gelap dari jarak lengan."
+  },
+  {
+   "id": "handle",
+   "label": "handle",
+   "points": 6,
+   "full_marks": "Mudah dibaca, bisa diucapkan, sama dengan handle di platform lain (TikTok, Shopee, WhatsApp Business). Tanpa garis bawah bertumpuk atau angka pengganti huruf.",
+   "common_fail": "Handle yang tidak bisa dieja setelah sekali didengar, atau '_official_id_2'."
+  },
+  {
+   "id": "category_contact",
+   "label": "kategori & kontak",
+   "points": 6,
+   "full_marks": "Akun profesional dengan kategori yang sesuai penawaran, tombol kontak yang berfungsi, email/WA yang benar-benar dicek.",
+   "common_fail": "Akun pribadi, jadi tidak ada insight dan tombol kontak."
+  },
+  {
+   "id": "recent_activity",
+   "label": "aktivitas terbaru",
+   "points": 10,
+   "full_marks": "Posting dalam tujuh hari terakhir dan membalas komen di post terbaru. Akun yang terakhir posting bulan Maret terbaca tutup.",
+   "common_fail": "Jeda lima minggu, atau komen 'harga berapa kak?' yang tidak dibalas."
+  },
+  {
+   "id": "story_presence",
+   "label": "kehadiran story",
+   "points": 6,
+   "full_marks": "Ada story sekarang, atau hampir setiap hari. Itu beda antara profil dan manusia.",
+   "common_fail": "Tidak pernah ada lingkaran story."
+  }
+ ]
+}
