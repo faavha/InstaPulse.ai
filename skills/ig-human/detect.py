@@ -60,10 +60,18 @@ def scale(value, human, machine):
     return clamp((value - machine) / (human - machine) * 100)
 
 
+QUOTE_RE = re.compile(r'["“][^"”\n]{1,80}["”]')
+
+
+def mask_quotes(text):
+    """Kutipan pendek biasanya contoh, bukan suara penulis."""
+    return QUOTE_RE.sub('"kutipan"', text)
+
+
 def sentences(text):
     # "Rp5.000" dan "4,5 juta" bukan akhir kalimat.
     text = re.sub(r"(?<=\d)[.,](?=\d)", "", text)
-    return [s.strip() for s in SENT_RE.findall(text) if len(s.split()) > 2]
+    return [s.strip() for s in SENT_RE.findall(text) if len(s.split()) >= 1]
 
 
 def words(text):
@@ -189,9 +197,9 @@ def run(text, lex, register="santai"):
     results = {}
     results["BURSTINESS"] = check_burstiness(text)
     results["SPECIFICITY"] = check_specificity(text)
-    results["SLOP DENSITY"] = check_slop(text, lex)
+    results["SLOP DENSITY"] = check_slop(mask_quotes(text), lex)
     results["FINGERPRINT"] = check_fingerprint(text)
-    results["VOICE"] = check_voice(text, lex, register)
+    results["VOICE"] = check_voice(mask_quotes(text), lex, register)
     scores = [results[c][0] for c in CHECKS]
     # The weakest check drags the verdict: a detector only needs one signal.
     overall = statistics.mean(scores) * 0.6 + min(scores) * 0.4

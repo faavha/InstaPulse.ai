@@ -82,6 +82,31 @@ def restore_emoji(text, found):
     return text
 
 
+# Kutipan pendek ("Halo guys, aku mau bahas") sering sengaja mencontohkan
+# bahasa yang buruk. Jangan diganti dan jangan dihitung sebagai pola.
+QUOTE_RE = re.compile(r'"[^"\n]{1,80}"')
+
+
+def protect_quotes(text):
+    found = []
+
+    def stash(m):
+        found.append(m.group(0))
+        return f"\x00QUO{len(found) - 1}\x00"
+
+    return QUOTE_RE.sub(stash, text), found
+
+
+def restore_quotes(text, found):
+    for i, q in enumerate(found):
+        text = text.replace(f"\x00QUO{i}\x00", q)
+    return text
+
+
+def mask_quotes(text):
+    return QUOTE_RE.sub('"kutipan"', text)
+
+
 def protect_urls(text):
     """Swap URLs for placeholders so no pass rewrites inside a link."""
     found = []
@@ -207,7 +232,8 @@ def scan_structures(text, lex):
             flags.append({"name": s["name"], "count": len(found), "fix": s["fix"]})
     # Sentence-length uniformity is structural too.
     flat = re.sub(r"(?<=\d)[.,](?=\d)", "", text)      # Rp5.000 bukan akhir kalimat
-    lens = [len(s.split()) for s in SENT_RE.findall(flat) if len(s.split()) > 2]
+    # Kalimat pendek ("Gratis.") justru tanda manusia, jadi ikut dihitung.
+    lens = [len(s.split()) for s in SENT_RE.findall(flat) if len(s.split()) >= 1]
     if len(lens) >= 4:
         mean = sum(lens) / len(lens)
         var = sum((n - mean) ** 2 for n in lens) / len(lens)
@@ -241,11 +267,13 @@ def humanize(text, lex):
     text, emojis = protect_emoji(text)
     text, inv = pass_invisible(text, lex)
     text, typo = pass_typographic(text, lex)
+    text, quotes = protect_quotes(text)
     text, lexi = pass_lexical(text, lex)
     # Satu penggantian bisa membentuk frasa klise baru ("sangat krusial" ->
     # "sangat penting"), jadi jalankan sekali lagi.
     text, lexi2 = pass_lexical(text, lex)
     lexi += lexi2
+    text = restore_quotes(text, quotes)
     text = restore_capitals(raw_for_case, text)
     text = restore_emoji(text, emojis)
     text = restore_urls(text, urls)
@@ -253,7 +281,7 @@ def humanize(text, lex):
         "invisible": inv,
         "typographic": typo,
         "lexical": lexi,
-        "structures": scan_structures(text, lex),
+        "structures": scan_structures(mask_quotes(text), lex),
     }
 
 

@@ -1,6 +1,6 @@
 {
   "name": "instapulse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "InstaPulse: 13 skill Claude untuk konten Instagram berbahasa Indonesia. Naskah Reels dengan 29 formula hook dan beat sheet berbasis suku kata, riset Reels viral (outlier multiple), caption ber-linter, carousel, story, skor profil, rencana mingguan WIB/WITA/WIT, komen, balasan, DM, repurpose, audit, dan humanizer 'bahasa AI' Indonesia. Tidak berafiliasi dengan Meta/Instagram. Adaptasi dari instagram-agent-skill (MIT) oleh Jake Schincariol.",
   "author": {
     "name": "Favha"

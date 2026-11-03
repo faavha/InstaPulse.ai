@@ -55,7 +55,7 @@ ASKS = [
      "share / kirim ke teman"),
     (re.compile(r"(?i)\b(?:follow|ikuti)\s+(?:aku|saya|kami|akun|@|me|for)"),
      "follow"),
-    (re.compile(r"(?i)\b(?:link|tautan)\s+(?:di|in|ada di)\s+(?:my\s+)?bio\b|\bcek bio\b|\bklik link\b"),
+    (re.compile(r"(?i)\b(?:link|tautan)(?:\s+[\w-]+){0,3}\s+(?:ada\s+)?(?:di|in)\s+(?:my\s+)?bio\b|\bcek bio\b|\bklik link\b"),
      "link di bio"),
     (re.compile(r"(?i)\b(?:geser|swipe|tap)\b\s*(?:ke|untuk|buat|left|right|for|to|through)?"),
      "geser / swipe"),
