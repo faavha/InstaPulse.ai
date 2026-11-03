@@ -1,12 +1,30 @@
-# InstaPulse.ai — Instagram Indonesia
+<p align="center">
+  <img src="assets/banner.svg" alt="InstaPulse - asisten konten untuk Instagram, berbahasa Indonesia" width="100%">
+</p>
 
-Tiga belas skill Claude untuk menjalankan akun Instagram berbahasa Indonesia.
-Adaptasi dari [instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)
-karya Jake Schincariol (MIT), ditulis ulang untuk bahasa, budaya, dan kebiasaan
-penonton Indonesia.
+# InstaPulse
 
-**Tidak ada yang diposting sebelum kamu bilang ya.** Skill-skill ini menulis.
+**Asisten konten untuk Instagram, berbahasa Indonesia.** Tiga belas skill Claude
+yang menulis naskah Reels, caption, carousel, story, komen, balasan dan DM,
+menilai hook sebelum kamu merekam, merencanakan minggumu, dan membedah
+Insights-mu, dengan bahasa, budaya, dan kebiasaan penonton Indonesia.
+
+**Tidak ada yang diposting sebelum kamu bilang ya.** InstaPulse menulis.
 Kamu yang posting.
+
+> **Cara pakai lengkap ada di [PANDUAN.md](PANDUAN.md).**
+
+```
+/plugin marketplace add faavha/InstaPulse.ai
+/plugin install instapulse@instapulse
+```
+
+Lalu cukup minta dengan bahasa biasa: *"bikinin naskah reels soal ..."*,
+*"balasin komen-komen ini"*, *"rencanain minggu depan"*.
+
+InstaPulse adalah adaptasi dari
+[instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)
+karya Jake Schincariol (MIT), ditulis ulang untuk bahasa Indonesia.
 
 ## Apa yang berbeda dari versi aslinya
 
@@ -84,7 +102,7 @@ Di Claude Code:
 
 ```
 /plugin marketplace add faavha/InstaPulse.ai
-/plugin install instagram-indonesia@instapulse
+/plugin install instapulse@instapulse
 ```
 
 Atau salin manual:
@@ -116,6 +134,14 @@ File kerja (voice.md, swipe.md, plan.md, log.md) disimpan di
   suaramu sendiri.
 - Fakta platform (batas 5 hashtag sejak 18 Desember 2025, batas caption 2.200
   karakter) benar per November 2026 dan bisa berubah.
+
+## Catatan merek
+
+InstaPulse adalah proyek open source independen dan **tidak berafiliasi,
+didukung, atau disponsori oleh Meta Platforms atau Instagram**. "Instagram"
+adalah merek dagang Meta Platforms, Inc., dan disebut di sini hanya untuk
+menjelaskan bahwa skill ini dipakai untuk konten Instagram. Logo InstaPulse
+adalah desain sendiri dan tidak memakai aset merek Instagram.
 
 ## Lisensi
 

@@ -8,9 +8,9 @@
   },
   "plugins": [
     {
-      "name": "instagram-indonesia",
+      "name": "instapulse",
       "source": "./",
-      "description": "13 skill Instagram berbahasa Indonesia: Reels, caption, carousel, story, profil, rencana mingguan, komen, DM, audit, dan humanizer bahasa AI Indonesia."
+      "description": "InstaPulse: 13 skill Instagram berbahasa Indonesia untuk kreator dan UMKM."
     }
   ]
 }
